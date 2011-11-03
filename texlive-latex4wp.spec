@@ -1,3 +1,9 @@
+# revision 22314
+# category Package
+# catalog-ctan /info/latex4wp
+# catalog-date 2010-09-15 17:37:36 +0200
+# catalog-license fdl
+# catalog-version 1.0.7
 Name:		texlive-latex4wp
 Version:	1.0.7
 Release:	1
@@ -40,6 +46,7 @@ LaTeX instead.
 %doc %{_texmfdistdir}/doc/latex/latex4wp/tbx.tex
 %doc %{_texmfdistdir}/doc/latex/latex4wp/xfig.eps
 %doc %{_texmfdistdir}/doc/latex/latex4wp/xfig.png
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -50,3 +57,5 @@ LaTeX instead.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
