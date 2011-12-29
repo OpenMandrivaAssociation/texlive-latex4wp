@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex4wp.doc.tar.
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 "LaTeX for Word Processor Users" is a guide that helps
@@ -46,7 +44,6 @@ LaTeX instead.
 %doc %{_texmfdistdir}/doc/latex/latex4wp/tbx.tex
 %doc %{_texmfdistdir}/doc/latex/latex4wp/xfig.eps
 %doc %{_texmfdistdir}/doc/latex/latex4wp/xfig.png
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,5 +54,3 @@ LaTeX instead.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
