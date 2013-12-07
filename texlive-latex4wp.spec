@@ -6,7 +6,7 @@
 # catalog-version 1.0.7
 Name:		texlive-latex4wp
 Version:	1.0.7
-Release:	4
+Release:	5
 Summary:	A LaTeX guide specifically designed for word processor users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex4wp
