@@ -1,12 +1,12 @@
 Name:		texlive-latex4wp
-Version:	1.0.10
-Release:	2
+Version:	35999
+Release:	1
 Summary:	A LaTeX guide specifically designed for word processor users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex4wp
 License:	FDL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex4wp.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex4wp.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex4wp.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex4wp.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,7 +23,7 @@ LaTeX instead.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
