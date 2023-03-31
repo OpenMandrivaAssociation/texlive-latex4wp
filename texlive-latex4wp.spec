@@ -1,6 +1,6 @@
 Name:		texlive-latex4wp
 Version:	35999
-Release:	1
+Release:	2
 Summary:	A LaTeX guide specifically designed for word processor users
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/latex4wp
