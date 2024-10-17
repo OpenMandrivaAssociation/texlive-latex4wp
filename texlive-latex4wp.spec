@@ -3,7 +3,7 @@ Version:	68096
 Release:	1
 Summary:	A LaTeX guide specifically designed for word processor users
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/latex4wp
+URL:		https://www.ctan.org/tex-archive/info/latex4wp
 License:	FDL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex4wp.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/latex4wp.doc.r%{version}.tar.xz
